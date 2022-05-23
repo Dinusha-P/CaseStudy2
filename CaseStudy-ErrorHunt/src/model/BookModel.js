@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/Library');
+//mongoose.connect('mongodb://localhost:27017/Library');
+//mongoose.connect(`mongodb+srv://dinusha:${process.env.MONGO_PASS}@cluster0.apqzh.mongodb.net/Library?retryWrites=true&w=majority`);
+mongoose.connect(`mongodb+srv://dinusha:dinusha12345@cluster0.apqzh.mongodb.net/Library?retryWrites=true&w=majority`);
 const Schema = mongoose.Schema;
 
 
